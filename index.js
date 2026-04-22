@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 // Secure gateway key (set in Render environment variables)
-const API_KEY = process.env.GATEWAY_API_KEY;
+const API_KEY = "test123";
 
 // Health check route
 app.get("/", (req, res) => {
