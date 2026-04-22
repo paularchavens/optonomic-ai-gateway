@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
 app.post("/chat", async (req, res) => {
   const auth = req.headers.authorization;
 
-  if (!auth || auth !== `Bearer ${API_KEY}`) {
+  if (!auth || auth !== `Bearer test123`) {
     return res.status(401).json({ error: "Unauthorized" });
   }
 
